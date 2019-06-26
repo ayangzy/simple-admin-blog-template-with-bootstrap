@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+		<script src="js/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">BlogPost</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollaspe">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarCollaspe">
+				<ul class="navbar-nav">
+					<li class="nav-item p-2x">
+						<a href="index.html" class="nav-link active">Dashboard</a>
+					</li>
+
+					<li class="nav-item p-2x">
+						<a href="posts.html" class="nav-link">Posts</a>
+					</li>
+
+					<li class="nav-item p-2x">
+						<a href="Categories.html" class="nav-link">Categories</a>
+					</li>
+
+					<li class="nav-item p-2x">
+						<a href="users.html" class="nav-link">Users</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown mr-3">
+						<a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
+							<i class="icon fa fa-user"></i> Welcome Felix
+						</a>
+
+						<div class="dropdown-menu">
+							<a href="profile.html" class="dropdown-item">
+								<i class="icon fa fa-users"></i> Profile
+							</a>
+
+
+
+							<a href="Setting.html" class="dropdown-item">
+								<i class="icon fa fa-cog"></i> Setting
+							</a>
+
+
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a href="" class="nav-link">
+							<i class="icon fa fa-user"></i>Logout
+						</a>
+					</li>
+				</ul>
+			</div>
+
+
+		</div>
+		
+	</nav>
+
+	<!--HEADER-->
+
+
+	<section id="header" class="py-2 bg-primary text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h3><i class="icon fa fa-cog"></i>Dashboard</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--MODAL headers-->
+
+	<section id="modalheader" class="py-3 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#addpostModal" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addpostModal">
+						<i class="icon fa fa-plus"></i>Add Post
+					</a>
+				</div>
+
+
+				<div class="col-md-3">
+					<a href="" class="btn btn-success btn-block" data-toggle="modal" data-target="#addcategoryModal">
+						<i class="icon fa fa-plus"></i>Add Categories
+					</a>
+				</div>
+
+
+				<div class="col-md-3">
+					<a href="" class="btn btn-warning btn-block" data-toggle="modal" data-target="#adduserModal">
+						<i class="icon fa fa-plus"></i>Add Users
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<!--POST-->
+
+
+	<section id="post" class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="card">
+						<div class="card-header">
+							<h4>Latest Post</h4>
+						</div>
+					
+					<table class="table table-striped">
+						<thead class="bg-dark text-white">
+							<tr>
+								<th>#</th>
+								<th>Title</th>
+								<th>Category</th>
+								<th>Date</th>
+								<th>View</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Post one</td>
+								<td>Web development</td>
+								<td>23 july, 2019</td>
+								<td>
+									<a href="" class="btn btn-secondary">
+										<i class="icon fa fa-angle-double-right"></i>details
+									</a>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td>2</td>
+								<td>Post two</td>
+								<td>Nod.js</td>
+								<td>8 auguest, 2019</td>
+								<td>
+									<a href="" class="btn btn-secondary">
+										<i class="icon fa fa-angle-double-right"></i>details
+									</a>
+								</td>
+							</tr>
+
+
+
+							<tr>
+								<td>3</td>
+								<td>Post three</td>
+								<td>Laravel News</td>
+								<td>23 june, 2019</td>
+								<td>
+									<a href="" class="btn btn-secondary">
+										<i class="icon fa fa-angle-double-right"></i>details
+									</a>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td>4</td>
+								<td>Post four</td>
+								<td>Javascripts</td>
+								<td>3 may, 2019</td>
+								<td>
+									<a href="" class="btn btn-secondary">
+										<i class="icon fa fa-angle-double-right"></i>details
+									</a>
+								</td>
+							</tr>
+						</tbody>
+						
+					</table>
+					<nav class="ml-4">
+						<ul class="pagination">
+							<li class="page-item disabled">
+								<a href="" class="page-link">Previous</a>
+							</li>
+
+
+							<li class="page-item active">
+								<a href="" class="page-link">1</a>
+							</li>
+
+
+							<li class="page-item">
+								<a href="" class="page-link">2</a>
+							</li>
+
+
+							<li class="page-item">
+								<a href="" class="page-link">3</a>
+							</li>
+
+
+							<li class="page-item">
+								<a href="" class="page-link">Next</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="card bg-primary text-white text-center mb-4">
+						<div class="card-body">
+							<h3>Post</h3>
+							<h4 class="display-4">
+								<i class="icon fa fa-pencil"></i>10
+							</h4>
+
+							<a href="posts.html" class="btn btn-outline-light btn-sm">view</a>
+						</div>
+					</div>
+
+
+					<div class="card bg-success text-white text-center mb-4">
+						<div class="card-body">
+							<h3>Categories</h3>
+							<h4 class="display-4">
+								<i class="icon fa fa-folder"></i>8
+							</h4>
+
+							<a href="categories.html" class="btn btn-outline-light btn-sm">view</a>
+						</div>
+					</div>
+
+
+
+					<div class="card bg-warning text-white text-center mb-4">
+						<div class="card-body">
+							<h3>Users</h3>
+							<h4 class="display-4">
+								<i class="icon fa fa-users"></i>6
+							</h4>
+
+							<a href="posts.html" class="btn btn-outline-light btn-sm">view</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--ADD POST MODAL-->
+
+	<div class="modal fade" id="addpostModal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content ">
+				<div class="modal-header bg-primary text-white">
+					<h3 class="modal-title ">Add Post</h3>
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="title">Title</label>
+							<input type="text" name="title" id="title" class="form-control">
+						</div>
+
+						<div class="form-group">
+							<label for="">Categories</label>
+							<select name="category" class="form-control">
+								<option>Web Development</option>
+								<option>Education</option>
+								<option>Entertainment</option>
+								<option>Jokes</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="image">Select Image</label>
+							<input type="file" class="form-control" id="image">
+						</div>
+
+						<div class="form-group">
+							<label for="content">Content</label>
+							<textarea class="form-control" name="editor1"></textarea>
+						</div>
+
+						<div class="form-group">
+							<button class="btn btn-primary btn-block">Add Post</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="main-footer" class="py-5 bg-dark text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 m-auto">
+						<p>Copyright &copy; <span id="year"></span></p>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!--ADD CATEGORY MODAL-->
+
+	<div class="modal fade" id="addcategoryModal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content ">
+				<div class="modal-header bg-primary text-white">
+					<h3 class="modal-title ">Add Category</h3>
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="title">Title</label>
+							<input type="text" name="title" id="title" class="form-control">
+						</div>
+					</form>
+
+					<div class="modal-footer" data-dismiss="modal">
+						<button class="btn btn-success">Save Category</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--ADD USER MODAL-->
+
+	<div class="modal fade" id="adduserModal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content ">
+				<div class="modal-header bg-primary text-white">
+					<h3 class="modal-title ">Add User</h3>
+					<button class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="username">Username</label>
+							<input type="text" name="username" id="username" class="form-control">
+						</div>
+
+
+						<div class="form-group">
+							<label for="Email">Email</label>
+							<input type="text" name="email" id="Email" class="form-control">
+						</div>
+
+						<div class="form-group">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" class="form-control">
+						</div>
+					</form>
+
+					<div class="modal-footer" data-dismiss="modal">
+						<button class="btn btn-warning">Save user</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+
+	<script>
+
+		$('#year').text(new Date().getFullYear());
+
+		CKEDITOR.replace( 'editor1' );
+	</script>
+</body>
+</html>
